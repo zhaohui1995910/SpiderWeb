@@ -1,9 +1,6 @@
 import multiprocessing
 import os
 
-from gevent import monkey
-monkey.patch_all()
-
 if not os.path.exists('gunicorn_logs'):
     os.mkdir('gunicorn_logs')
 
@@ -19,10 +16,8 @@ timeout = 600
 
 # 启动的进程数
 workers = 1
-worker_class = 'eventlet'  # gevent 会重复运行定时任务
+# worker_class = 'eventlet'  # gevent 会重复运行定时任务
 
 threads = multiprocessing.cpu_count() * 2 + 1
 
 x_forwarded_for_header = 'X-FORWARDED-FOR'
-
-
