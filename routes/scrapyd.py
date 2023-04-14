@@ -1,0 +1,21 @@
+from apps.scrapyd import api
+from apps.scrapyd import views
+
+api.add_resource(views.ServerInfo, '/servers')
+api.add_resource(views.ProjectInfo, '/projects')
+api.add_resource(views.ProjectSpider, '/projects/spiders')
+api.add_resource(views.SpiderInfo, '/spiders/info')
+api.add_resource(views.TaskInfo, '/tasks/info')
+api.add_resource(views.TaskDelete, '/tasks/delete')
+api.add_resource(views.TaskStatus, '/tasks/status')
+api.add_resource(views.JobsInfo, '/jobs')
+api.add_resource(views.JobInfo, '/get/job')
+api.add_resource(views.LogsList, '/logs')
+api.add_resource(views.LogInfo, '/log/info')
+api.add_resource(views.Schedule, '/spider/run')
+api.add_resource(views.Cancel, '/spider/cancel')
+api.add_resource(views.Stats, '/job/stats')
+api.add_resource(views.Dashboard, '/dashboard/stats')
+api.add_resource(views.DataViews, '/views')
+api.add_resource(views.Notice, '/notice')
+api.add_resource(views.Projects, '/project/set')

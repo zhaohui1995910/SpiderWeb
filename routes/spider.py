@@ -1,0 +1,23 @@
+from apps.spider import api
+from apps.spider import views
+
+api.add_resource(views.DPGXWH, '/dpgxwh')
+api.add_resource(views.AmazonProductInfo, '/amazon/info')
+api.add_resource(views.AmazonPLPM, '/amazon/plpm')
+api.add_resource(views.AmazonProductReview, '/amazon/detail')
+api.add_resource(views.AmazonProductHistory, '/amazon/product/history')
+api.add_resource(views.AmazonClientBrands, '/client/brands')
+api.add_resource(views.AmazonSearch, '/amazon/search')
+api.add_resource(views.ForeignCurrency, '/foreigncurrency')
+api.add_resource(views.TapdStat, '/tapd/stat')
+api.add_resource(views.TapdStatDetail, '/tapd/stat/detail')
+api.add_resource(views.LumiAppLogs, '/lumi/logs')
+api.add_resource(views.LumiAppLogsDownload, '/download/lumi/logs')
+api.add_resource(views.LumiAppLogsSearchCount, '/lumi/logs/count')
+api.add_resource(views.LumiAppLogsSearchProCount, '/search/lumilog/count')
+api.add_resource(views.LumiAppUserOpLogCount, '/search/lumilog/usergroup/count')
+# api.add_resource(views.AlbbChangeContent, '/albb')
+api.add_resource(views.Zscq, '/zscq')
+api.add_resource(views.GJJAutoForm, '/auto/gjj')
+api.add_resource(views.ReceivePhoneCode, '/receive/phone/code')
+api.add_resource(views.UUDI, '/uuid4')

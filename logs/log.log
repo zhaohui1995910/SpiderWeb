@@ -1,0 +1,86 @@
+2022-03-15 15:36:32,018 - ERROR - app.py - log_exception - 1891 - Exception on /spider/receive/phone/code [POST]
+Traceback (most recent call last):
+  File "src\pymssql\_pymssql.pyx", line 458, in pymssql._pymssql.Cursor.execute
+  File "src\pymssql\_mssql.pyx", line 1104, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src\pymssql\_mssql.pyx", line 1135, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src\pymssql\_mssql.pyx", line 1268, in pymssql._mssql.MSSQLConnection.format_and_run_query
+  File "src\pymssql\_mssql.pyx", line 1806, in pymssql._mssql.check_cancel_and_raise
+  File "src\pymssql\_mssql.pyx", line 1852, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near 's'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\admin\Desktop\工作\代码\spider-web\spider_web\apps\spider\views.py", line 1381, in post
+    cursor.execute(sql, ())
+  File "src\pymssql\_pymssql.pyx", line 475, in pymssql._pymssql.Cursor.execute
+pymssql._pymssql.ProgrammingError: (102, b"Incorrect syntax near 's'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2022-03-15 15:37:06,316 - ERROR - app.py - log_exception - 1891 - Exception on /spider/receive/phone/code [POST]
+Traceback (most recent call last):
+  File "src\pymssql\_pymssql.pyx", line 458, in pymssql._pymssql.Cursor.execute
+  File "src\pymssql\_mssql.pyx", line 1104, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src\pymssql\_mssql.pyx", line 1135, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src\pymssql\_mssql.pyx", line 1268, in pymssql._mssql.MSSQLConnection.format_and_run_query
+  File "src\pymssql\_mssql.pyx", line 1806, in pymssql._mssql.check_cancel_and_raise
+  File "src\pymssql\_mssql.pyx", line 1852, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near 's'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\admin\Desktop\工作\代码\spider-web\spider_web\apps\spider\views.py", line 1381, in post
+    cursor.execute(sql, ())
+  File "src\pymssql\_pymssql.pyx", line 475, in pymssql._pymssql.Cursor.execute
+pymssql._pymssql.ProgrammingError: (102, b"Incorrect syntax near 's'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2022-03-15 16:07:20,116 - ERROR - app.py - log_exception - 1891 - Exception on /spider/receive/phone/code [POST]
+Traceback (most recent call last):
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\admin\Desktop\工作\代码\spider-web\spider_web\apps\spider\views.py", line 1389, in post
+    mssql.commit()
+  File "C:\Users\admin\Desktop\工作\代码\spider-web\spider_web\tool\flask_pymssql.py", line 56, in __exit__
+    self.cur.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2022-03-16 09:55:46,611 - ERROR - app.py - log_exception - 1891 - Exception on /spider/receive/phone/code [POST]
+Traceback (most recent call last):
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\anaconda\envs\flask-python3.7\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\admin\Desktop\工作\代码\spider-web\spider_web\apps\spider\views.py", line 1387, in post
+    if '智联招聘' in content and '验证码' in content:
+TypeError: argument of type 'NoneType' is not iterable
