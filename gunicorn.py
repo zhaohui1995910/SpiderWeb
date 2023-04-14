@@ -10,7 +10,7 @@ if not os.path.exists('gunicorn_logs'):
 debug = False
 preload_app = True
 loglevel = 'info'
-bind = '0.0.0.0:8900'
+bind = '0.0.0.0:8888'
 pidfile = 'gunicorn_logs/gunicorn.pid'
 logfile = 'gunicorn_logs/debug.log'
 errorlog = 'gunicorn_logs/error.log'
